@@ -1,0 +1,9 @@
+<!-- templates/scoring/result.html -->
+{% extends 'scoring/base.html' %}
+{% block content %}
+    <div class="text-center mt-5">
+        <h2>Your Credit Score</h2>
+        <p>Your calculated credit score is: <strong>{{ score }}</strong></p>
+        <a href="{% url 'index' %}" class="btn btn-secondary">Back to Home</a>
+    </div>
+{% endblock %}

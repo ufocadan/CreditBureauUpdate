@@ -1,0 +1,24 @@
+<!-- templates/scoring/questionnaire.html -->
+{% extends 'scoring/base.html' %}
+{% block content %}
+    <div class="mt-5">
+        <h2>Credit Score Questionnaire</h2>
+        <!-- Modal for questions -->
+        <div class="modal" id="questionModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Question</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="questionForm">
+                            <div id="questionContainer"></div>
+                            <button type="button" class="btn btn-primary" id="nextQuestionBtn">Next</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

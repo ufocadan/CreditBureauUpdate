@@ -1,0 +1,9 @@
+<!-- templates/scoring/index.html -->
+{% extends 'scoring/base.html' %}
+{% block content %}
+    <div class="text-center mt-5">
+        <h1>Welcome to the Credit Bureau Update System</h1>
+        <p>Answer a few questions to update your credit score.</p>
+        <a href="{% url 'questionnaire' %}">Start Questionnaire</a>
+    </div>
+{% endblock %}
